@@ -26,7 +26,13 @@ ARG DEPENDENCY=/workspace/app/target/dependency
 COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
-ENTRYPOINT ["java","-cp","app:app/lib/*","com.example.bookstore.BookstoreApplication"]
 
-# Set the active profile to "prod"
+# Set default environment variables
+ENV PORT=8080
 ENV SPRING_PROFILES_ACTIVE=prod
+
+# Use ENTRYPOINT to configure the container startup command
+ENTRYPOINT ["java", "-cp", "app:app/lib/*", \
+           "-Dserver.port=${PORT}", \
+           "-Dspring.profiles.active=${SPRING_PROFILES_ACTIVE}", \
+           "com.example.bookstore.BookstoreApplication"]

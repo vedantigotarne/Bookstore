@@ -2,8 +2,7 @@ services:
   - type: web
     name: bookstore
     env: docker
-    buildCommand: ./mvnw package -DskipTests
-    startCommand: java -Dserver.port=$PORT -Dspring.profiles.active=prod -jar target/bookstore.jar
+    buildCommand: ./mvnw clean package -DskipTests
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: prod
