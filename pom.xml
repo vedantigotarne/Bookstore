@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bookstore</name>
 	<description>Demo project for Spring Boot</description>
-	<url>https://github.com/your-username/bookstore</url>
+	<url>https://github.com/vedantigotarne/bookstore</url>
 	<licenses>
 		<license>
 			<name>The Apache License, Version 2.0</name>
@@ -22,14 +22,14 @@
 	</licenses>
 	<developers>
 		<developer>
-			<name>Your Name</name>
-			<email>your.email@example.com</email>
+			<name>Vedanti Gotarne</name>
+			<email>vedantigotarne@gmail.com</email>
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:git://github.com/your-username/bookstore.git</connection>
-		<developerConnection>scm:git:ssh://github.com:your-username/bookstore.git</developerConnection>
-		<url>https://github.com/your-username/bookstore</url>
+		<connection>scm:git:git://github.com/vedantigotarne/bookstore.git</connection>
+		<developerConnection>scm:git:ssh://github.com:vedantigotarne/bookstore.git</developerConnection>
+		<url>https://github.com/vedantigotarne/bookstore</url>
 	</scm>
 	<properties>
 		<java.version>17</java.version>
