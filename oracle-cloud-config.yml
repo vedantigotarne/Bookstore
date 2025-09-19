@@ -1,0 +1,30 @@
+# Oracle Cloud Instance Configuration
+instance_name: bookstore-app
+shape: VM.Standard.E2.1.Micro
+operating_system: Oracle Linux
+memory: 1GB
+vcpus: 1
+
+# Deployment Configuration
+app_name: bookstore
+port: 8080
+java_version: 17
+
+# Database Configuration
+database:
+  name: bookstore
+  type: MySQL
+  version: 8.0
+
+# Networking
+allow_ports:
+  - 22    # SSH
+  - 80    # HTTP
+  - 443   # HTTPS
+  - 8080  # Application port
+
+# Deployment Scripts
+setup_scripts:
+  - install_java.sh
+  - install_mysql.sh
+  - deploy_app.sh
