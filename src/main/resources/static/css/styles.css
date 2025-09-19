@@ -1,0 +1,246 @@
+/* Global Styles */
+:root {
+    --primary-color: #4285f4;
+    --secondary-color: #f8f9fa;
+    --accent-color: #fbbc05;
+    --text-color: #333;
+    --light-text: #6c757d;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Carousel */
+.carousel-item {
+    height: 400px;
+    background-color: #000;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    bottom: 5rem;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Book Card */
+.book-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.book-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.book-card .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-card .card-text {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+.book-card .rating {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.book-card .rating-text {
+    color: var(--light-text);
+    font-size: 0.8rem;
+}
+
+.book-card .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Category Card */
+.category-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.category-card .card-title {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Book Detail Page */
+.book-detail-image {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.book-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.book-meta {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+.book-description {
+    line-height: 1.8;
+}
+
+/* Cart Page */
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.quantity-input {
+    width: 60px;
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(66, 133, 244, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #3367d6;
+    border-color: #3367d6;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Admin Dashboard */
+.dashboard-card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.dashboard-card .card-body {
+    padding: 2rem;
+}
+
+.dashboard-card .number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.dashboard-card .title {
+    font-size: 1.2rem;
+    color: var(--light-text);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .carousel-item {
+        height: 300px;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+    
+    .book-detail-image {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel-item {
+        height: 200px;
+    }
+    
+    .carousel-caption {
+        bottom: 1rem;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+} 
