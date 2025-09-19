@@ -1,7 +1,7 @@
 {
   "name": "Spring Boot Bookstore",
   "description": "A full-featured online bookstore built with Spring Boot",
-  "repository": "https://github.com/YOUR-USERNAME/bookstore",
+  "repository": "https://github.com/vedantigotarne/bookstore",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": ["java", "spring", "spring-boot", "bookstore", "mysql"],
   "addons": ["jawsdb:kitefin"],
