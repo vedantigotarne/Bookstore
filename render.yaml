@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: bookstore
+    env: docker
+    buildCommand: ./mvnw package -DskipTests
+    startCommand: java -Dserver.port=$PORT -Dspring.profiles.active=prod -jar target/bookstore.jar
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: MYSQL_HOST
+        fromDatabase:
+          name: bookstore-db
+          property: host
+      - key: MYSQL_PORT
+        fromDatabase:
+          name: bookstore-db
+          property: port
+      - key: MYSQL_USER
+        fromDatabase:
+          name: bookstore-db
+          property: user
+      - key: MYSQL_PASSWORD
+        fromDatabase:
+          name: bookstore-db
+          property: password
+      - key: MYSQL_DB
+        value: bookstore
+
+databases:
+  - name: bookstore-db
+    plan: free
+    databaseName: bookstore
+    ipAllowList: []

@@ -2,6 +2,14 @@
 
 A full-featured online bookstore built with Spring Boot, MySQL, Thymeleaf, and Spring Security.
 
+## One-Click Deployment
+
+Deploy this project with one click:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/YOUR-USERNAME/bookstore)
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/YOUR-USERNAME/bookstore)
+
 ## Features
 
 - User authentication and authorization
